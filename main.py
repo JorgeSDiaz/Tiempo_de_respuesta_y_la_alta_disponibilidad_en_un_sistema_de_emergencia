@@ -2,6 +2,7 @@ import random
 from time import time
 
 from phone_numbers_extractor import extract_numbers_from_google_csv
+from phone_numbers_generator import generate_phone_numbers
 from request import send_post_request
 
 CONTACTS = []
@@ -42,6 +43,7 @@ def alert(message: str, cant: int) -> float:
 
 
 def main() -> None:
+    # contacts = generate_phone_numbers(100)
     contacts = extract_numbers_from_google_csv("path/file_name.csv")
     country_code = "57"
 
