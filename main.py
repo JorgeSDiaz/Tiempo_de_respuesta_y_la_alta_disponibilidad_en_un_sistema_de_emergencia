@@ -42,10 +42,11 @@ def alert(message: str, cant: int) -> float:
 
 
 def main() -> None:
-    contacts = extract_numbers_from_google_csv("contacts.csv")
+    contacts = extract_numbers_from_google_csv("path/file_name.csv")
+    country_code = "57"
 
     for index in range(len(contacts)):
-        contacts[index] = format_number("57", str(contacts[index]))
+        contacts[index] = format_number(country_code, str(contacts[index]))
 
     contacts = list(filter(lambda x: len(x) == 12, contacts))
     for contact in contacts:
