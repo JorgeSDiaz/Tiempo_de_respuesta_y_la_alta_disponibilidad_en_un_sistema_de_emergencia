@@ -60,6 +60,8 @@ En este momento en la consola nos aparecera la oportunidad de introducir el núm
 ![Run](img/run.png)
 
 El codigo tomara de manera aleatoria numeros de el arreglo de contactos que generamos o extraimos, y de esa manera ira enviando los mensajes, como se muestra en el video de ejemplo.
+
+Para terminar con la ejecución del programa unicamente es necesario que en la pregunta de cuantas solicitudes o mensajes se desean hacer se introduzca un 0.
 	
 ---
 ## Construido con
